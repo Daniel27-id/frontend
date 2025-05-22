@@ -14,13 +14,13 @@ class Login extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { username, password } = this.state;
+    const { password } = this.state;
 
-    if (username === 'daniel' && password === '11') {
+    if (password === '11') {
       this.props.handleLogin();
       this.setState({ redirectToDashboard: true });
     } else {
-      alert('Invalid username or password.');
+      alert('Invalid password.');
     }
   };
 
@@ -31,16 +31,27 @@ class Login extends Component {
 
     return (
       <div className='page'>
-      <div className="login-container">
-        <h1>WELCOME TO RM. Wakeke</h1>
-        <form onSubmit={this.handleSubmit}>
-          <input type="text" name="username" placeholder="Username" value={this.state.username} onChange={this.handleInputChange} />
-          <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handleInputChange} />
-          <button type="submit">Login</button>
-        </form>
+        <div className="login-container">
+          <h1>WELCOME TO RM. Wakeke</h1>
+          <form onSubmit={this.handleSubmit}>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              value={this.state.username}
+              onChange={this.handleInputChange}
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={this.state.password}
+              onChange={this.handleInputChange}
+            />
+            <button type="submit">Login</button>
+          </form>
+        </div>
       </div>
-      </div>
-     
     );
   }
 }
