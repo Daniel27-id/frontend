@@ -8,11 +8,11 @@ import lima from '../asset/images/nasiGorengRoa.jpg';
 class Makanan extends Component {
   render() {
     const makananList = [
-      { nama: "Nasi cakalang", harga: "Rp30.000", gambar: satu },
-      { nama: "Nasi Mujair", harga: "Rp28.000", gambar: dua },
-      { nama: "Nasi Tude", harga: "Rp25.000", gambar: tiga },
-      { nama: "Nasi goreng roa", harga: "Rp20.000", gambar: lima },
-      { nama: "Tinutuan", harga: "Rp18.000", gambar: empat }
+      { nama: 'Nasi Cakalang', harga: 'Rp25.000', gambar: satu },
+      { nama: 'Nasi Mujair', harga: 'Rp22.000', gambar: dua },
+      { nama: 'Nasi Tude', harga: 'Rp20.000', gambar: tiga },
+      { nama: 'Tinutuan', harga: 'Rp18.000', gambar: empat },
+      { nama: 'Nasi Goreng Roa', harga: 'Rp23.000', gambar: lima }
     ];
 
     return (

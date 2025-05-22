@@ -16,7 +16,7 @@ class Login extends Component {
     e.preventDefault();
     const { username, password } = this.state;
 
-    if (username === 'JODAME' && password === 'fpb50') {
+    if (username === 'daniel' && password === '11') {
       this.props.handleLogin();
       this.setState({ redirectToDashboard: true });
     } else {
