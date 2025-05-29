@@ -420,3 +420,62 @@ body {
   color: #F9D342;
   margin-left: 20px;
 }
+
+@media (max-width: 600px) {
+  .page {
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .login-container {
+    padding: 30px;
+  }
+
+  .login-container input, 
+  .login-container button {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .header, .footer {
+    font-size: medium;
+    padding: 15px;
+  }
+
+  .dashboard {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding: 10px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .makanan-item, .minuman-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .makanan-image, .minuman-image {
+    margin: 0 0 10px 0;
+  }
+
+  .makanan-details, .minuman-details {
+    flex-direction: column;
+  }
+
+  .makanan-name, .minuman-name, 
+  .makanan-harga, .minuman-harga {
+    margin: 5px 0;
+  }
+}
